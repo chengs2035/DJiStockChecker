@@ -20,14 +20,7 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <name>Your Name</name>
-            <email>your.email@example.com</email>
-            <organization>Your Organization</organization>
-            <organizationUrl>http://www.example.com</organizationUrl>
-        </developer>
-    </developers>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

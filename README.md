@@ -19,19 +19,23 @@
 
 ### 配置说明
 
-1. 在`src/main/resources/config.properties`中配置以下参数：
+1. 在 `src/main/resources/config.properties`中配置以下参数：
+
    ```properties
    # 监控商品URL
-   product.url=你要监控的商品URL
-   
+   # number改成1,2,3，对应产品1，产品2，产品3，可同时监控多个产品！
+   product.[number].name=大疆官网的产品名称（随便一个名称）
+   product.[number].url=对应产品的URL
+
    # 企业微信机器人Webhook地址
    webhook.url=你的企业微信机器人webhook地址
-   
+
    # 检查间隔时间（分钟）
    check.interval=3
+   # 更多参数，请参考src/main/resources/config.properties.template。
    ```
-
 2. 编译并运行：
+
    ```bash
    mvn clean package
    java -jar target/dji-stock-checker-1.0-jar-with-dependencies.jar
