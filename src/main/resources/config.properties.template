@@ -1,0 +1,39 @@
+# DJI Stock Checker Configuration Template
+# 重命名此文件为 config.properties 并填写你的实际配置
+
+# 商品配置（必填）
+# 格式：product.{编号}.name=商品名称
+#      product.{编号}.url=商品URL
+# 示例：
+product.1.name=DJI Mini 3 Pro
+product.1.url=https://store.dji.com/cn/product/dji-mini-3-pro
+product.2.name=DJI Osmo Action 5
+product.2.url=https://store.dji.com/cn/product/osmo-action-5
+
+# 企业微信机器人Webhook地址（必填）
+# 从企业微信群机器人设置中获取
+webhook.url=https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=your-key
+
+# 检查间隔时间配置（可选）
+# 最小检查间隔时间（分钟）
+check.interval.min=3
+# 最大检查间隔时间（分钟）
+check.interval.max=6
+
+# 库存检查配置（可选）
+# 库存状态元素的CSS类名
+target.class=info-section
+# 缺货状态的文本内容
+target.text=缺货
+
+# HTTP请求配置（可选）
+# User-Agent设置
+http.user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+
+# 通知设置（可选）
+# 通知时间间隔（分钟，默认60）
+notification.interval=60
+
+# 代理设置（可选）
+# http.proxy.host=
+# http.proxy.port=
